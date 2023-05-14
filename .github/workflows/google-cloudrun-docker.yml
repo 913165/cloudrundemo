@@ -23,7 +23,7 @@ jobs:
 
     - name: Build with Maven
       env:
-        PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }} 
+        PASSWORD: ${{ secrets.PASSWORD }} 
       run: mvn compile jib:build --file pom.xml
   deploy:
     runs-on: ubuntu-latest
