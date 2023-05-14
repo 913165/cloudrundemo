@@ -33,8 +33,7 @@ jobs:
         id: auth
         uses: 'google-github-actions/auth@v0'
         with:
-          token_format: 'access_token'
-          service_account: sa-cicd@my-project-001-386612.iam.gserviceaccount.com
+          credentials_json: '${{ secrets.SA_CICD }} '
       - name: Deploy to Cloud Run
         id: deploy
         uses: google-github-actions/deploy-cloudrun@v0
