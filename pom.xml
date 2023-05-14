@@ -69,7 +69,7 @@
 						<image>docker.io/tinumistry/crdemo:cicd001</image>
 						<auth>
 							<username>tinumistry</username>
-							<password>Welcometomsci@123</password>
+							<password>${env.PASSWORD}</password>
 						</auth>
 					</to>
 				</configuration>
